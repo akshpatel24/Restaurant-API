@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>practice1</title>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+
+
+</style>
+
+</head>
+
+<body>
+<label>username</label>
+<input type="text" id="user"  name="username" value="korl" >
+<br>
+<label for="password">Password: </label>
+<input type="text" id="password" name="password" value="">
+<input type="button" id="pas" value="submit" onclick="user2()">
+
+<table>
+    <tr>
+        <th>username</th>
+        <th>password </th>
+    </tr>
+   
+  <tr>
+
+    <td id="xy">  </td> 
+    <td id="cy">  </td>
+
+
+ </tr>
+
+</table>
+
+
+<script>
+
+function user2()
+{
+    let xc=document.getElementById("xy")
+    let yc=document.getElementById("cy")
+
+let x=document.getElementById("user")
+x.innerHTML=xc.value
+
+let y=document.getElementById("password")
+y.innerHTML=yc.value
+
+
+
+
+console.log(x.value,y.value)
+
+
+
+
+
+
+
+
+}
+
+</script>
+
+
+
+
+
+</html>

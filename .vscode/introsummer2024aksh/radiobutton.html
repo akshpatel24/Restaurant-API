@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+
+
+</head>
+<body>
+    
+        <label>Playing with if statement:</label>
+        <br>
+        <input type="radio" id="python" name="program" value="python">
+    
+        <label>Python</label>
+        
+        <br>
+        
+        <input type="radio" id="javascript" name="program" value="javascript">
+        <label>javascript</label>
+        <input type="button" id="Findselect" value="Find selected language" onclick="oneanother()">
+        <br>
+        <label> Selected language is   </label>
+        <input type="txt" id="txtsel" value="">
+
+<script>
+    function oneanother()
+    {
+    let programmingoption=document.querySelector("input[name='program']:checked")
+    w
+    let Findselect=document.getElementById("txtsel")
+     Findselect.value =programmingoption ? programmingoption.value + " Select" : "selected";
+     
+    }
+
+
+
+
+
+</script>
+
+</body>
+
+
+
+
+
+
+</html>

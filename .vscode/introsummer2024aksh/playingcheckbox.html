@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Demo</title>
+</head>
+<body>    
+    <h1>
+        <b>Playing with Checkbox - Demo</b>
+    </h1>
+
+    <label>Like to join MS</label>
+    <input type="checkbox" id="preference" name="preference" value="Yes">
+    <br>
+    <label>   Submit your choice</label>
+    
+<input type="button" id="submit"  value="Submit" onclick="print()">
+    <br>
+    <label> selected choice:</label>
+    <input type="text" id="select" value="">
+
+</body>
+<!-- The goal is to have query because multiple options.-->
+<!--         // likejoin refers to the result of document.querySelector("input[name='preference']:checked"), which selects the checked checkbox with the name "preference" if one exists.
+ -->
+<script>
+function print()
+    {
+        let likejoin=document.querySelector("input[name='preference']:checked");
+
+        let selectedchoice=document.getElementById("select")
+        
+        selectedchoice.value = likejoin ? likejoin.value + " Select" : "Not checked";
+
+    }
+</script>
+</html>

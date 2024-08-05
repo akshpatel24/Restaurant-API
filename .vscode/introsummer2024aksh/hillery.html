@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>        
+        th, td {
+            border: 2px solid black;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Ensure borders are not doubled */
+            border: 2px solid black;
+        }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>MARKS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Hillary</td>
+                    <td>Advanced</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>Operating</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Lary</td>
+                    <td>Advanced</td>
+                    <td>64</td>
+                </tr>
+                <tr>
+                    <td>Operating</td>
+                    <td>68</td>
+                </tr>
+                <tr>
+                    <td>     </td>
+                    <td colspan="2">Total average 66.5</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> --> 
+        <title>Login Page</title>
+
+        <style>
+        body {
+            background-color: green;
+            text-align: center;
+       
+       
+        }
+
+
+
+
+
+
+
+        h1 {
+            font-family: Arial;
+            font-variant: normal;
+            font-size: 2cm;
+            color: black;
+            text-align: center;
+        }
+    
+        .section2{
+
+            background-color: white;
+            /* Background color for the centered section */
+            width: 500px;
+        
+            height: 1000 px;
+
+        }
+        a{
+            color: black;
+            margin-right: auto;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="section2">
+            <form action="loginpage.html" method="post">
+
+               <h1>Password reset</h1>
+
+                <label for="email">email</label>
+
+       `         <input type="text" id="email" name="email">
+
+                <br>
+
+                <!-- id and for should be same in form -->
+                <label for="newpassword">newpassword</label>
+
+                <input type="text" id="newpassword" name="newpassword">
+                <!-- name will be used in server -->
+
+                <br>
+             
+                <a href="loginpage.html"> Homepage</a>
+            </form>
+        </div>
+    </body>
+
+</html>
